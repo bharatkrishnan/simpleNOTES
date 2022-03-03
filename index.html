@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleNOTES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div id="navbar" class="navbar">
+                <ul id="nacontent">
+                    <li  class="navlinks" onclick="scrollToElement('heading1')">Home</li>
+                    <li  class="navlinks" onclick="scrollToElement('yournotes')">Saved Notes</li>
+                    <li  class="navlinks" onclick="scrollToElement('footerdiv')">About Us</li>
+                </ul>
+            </div>
+            <h1 id="heading1" class="heading1">WELCOME TO SimpleNOTES</h1>
+            <div class="notes">
+                <h2 class="heading2">Add a Note</h2>
+                <textarea name="note" id="note" cols="55" rows="7" placeholder="Enter a note ..."></textarea>
+                <button id="submitnote">Add note</button>
+            </div>
+            <hr class="line1">
+            <hr class="line2">
+            <div id="savednotes">
+                <h2 id="yournotes">Your notes</h2>
+                <h3 id="empty"></h3>
+                <div class="search">
+                    <input type="search" id="searchbox" placeholder="Search saved notes" >
+                    <button type="submit" id="searchbtn"><img src="images/search.png" alt="search" height="15px"
+                            width="17px" id="searchicon" onclick="search()"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"> 
+        <div id="footerdiv">
+            <p id="about">This website was made by Bharat Krishnan <br> SimpleNOTES &#169 <br>2022</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
